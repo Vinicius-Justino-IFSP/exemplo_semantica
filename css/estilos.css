@@ -70,6 +70,38 @@ header .btn-comum {
     cursor: pointer;
 }
 
+#recursos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+ #recursos-linha{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .recursos-coluna{
+    height: 300px;
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 0 0 5PX rgba(0, 0, 0, 0.2);
+ }
+ .recursos-coluna:hover{
+    cursor: pointer;
+ }
+ .recursos-coluna img{
+    width: 100px;
+    margin-bottom: 30px;
+ }
+ .recursos-coluna h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+ }
+
 #sobre {
     padding: 100px 0;
     display: flex;
@@ -108,13 +140,46 @@ header .btn-comum {
     color: #797979;
 }
 
+#contato{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #contato-coluna-esquerda, #contato-coluna-direita{
+    flex-basis: 50%;
+  }
+  #contato-coluna-direita img{
+    width: 100%;
+  }
+  form{
+    max-width: 70%;
+    margin: 30px 0;
+  }
+  form input, textarea{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 2px solid #f67c92;
+  }
+  #contato-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #contato-btn button{
+    flex-basis: 48%;
+    padding: 18px 0;
+  }
+
 footer {
     padding: 50px 0 30px;
 }
 
 h4 {
     width: 100%;
-    border-top: 1px solid #F67C92;
+    border-top: 1px solid #F67C92; /* Essa linha atrapalha os cards */
     margin-bottom: 30px;
 }
 
